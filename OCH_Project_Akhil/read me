@@ -1,0 +1,10 @@
+FIRST INSTALL  NPM PACKAGES
+
+// npm init -y
+// npm install express
+// npm install nodemon
+// npm install mysql
+login mysql => mysql -u root -p
+ enter password:
+
+ npm start Server

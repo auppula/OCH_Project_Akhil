@@ -1,0 +1,612 @@
+/* Header style */
+.ts-header {
+    background-color: rgb(0,118,164);
+    text-align: center;
+    color : white;
+    height: 15vh;
+  }
+  
+  /* Navbar style */
+  .ts-navbar {
+    background-color: rgb(0,64,96);
+    text-align: center;
+  
+  }
+  
+  /* Navlink style */
+  .ts-navlink {
+    /*background-color:rgb(0,96,132);*/
+    color:white;
+    font-size:18px;
+    text-align:center;
+    height: 6vh;
+  }
+  
+  /* role style */
+  .ts-role {
+    background-color:inherit;
+    color:rgb(206, 206, 30);
+    font-size:20px;
+    font-weight: 800;
+  }
+  
+  /* role style invisible */
+  .ts-role-invisible {
+    background-color:inherit;
+    color:rgb(0,64,96);
+    font-size:18px;
+  }
+  
+  li a:hover {
+    background-color: rgb(3, 193, 193);
+    color: white;
+  }
+  
+  .ts-side-div {
+     background-color: rgb(155,211,221);
+     height: 100%;
+  }
+  
+  .ts-middle-div {
+     background-image: url("../img/lightbg.jpeg");
+      background-size: contain;
+     height: 74vh;
+  }
+  
+  .ts-pading-margin {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .ts-border {
+    border:1px solid rgb(155,211,221);
+    vertical-align: bottom;
+  }
+  
+  /* Header style */
+  .ts-footer {
+    background-color: rgb(0,96,132);
+    text-align: center;
+    color : white;
+    height: 5vh;
+  }
+  
+  .ts-white-text {
+    color : white;
+  }
+  
+  .ts-input-width-224 {
+     width: 100px;
+  
+  }
+      
+  .ts-input-width {
+    width: 510;
+  }
+  /* ---------------------------------------------------- */
+  /* ------------middle coloum style -----------------*/
+  /* ---------------------------------------------------- */
+  #display1{
+    display:block;
+  
+  }
+  #leftalign{
+    text-align: left;
+    
+  }
+  #main{
+    height: 520px;
+  width: 480px;
+  border-radius: 1rem;
+  border: 1px solid white;
+  backdrop-filter: blur(18px);
+    background: linear-gradient(to right bottom, rgba(73, 73, 73, 0.5),rgba(70, 65, 65, 0.3));
+  
+  }
+  /* back main border for view reports */
+  #backmain{
+    height: 380px;
+  width: 500px;
+  border-radius: 1rem;
+  border: 1px solid white;
+  backdrop-filter: blur(18px);
+    background: linear-gradient(to right bottom, rgba(73, 73, 73, 0.5),rgba(70, 65, 65, 0.3));
+  
+  }
+  #display2{
+    display: none;
+  }
+  #displayCompetition{
+    display: none;
+  }
+  #displayCompetitiondancing{
+    display: none;
+  }
+  
+  #displayCompetitionpainting{
+    display: none;
+  }
+  #displayCompetitionwriting{
+    display: none;
+  }
+  #displayCompetitioncommedy
+  {
+    display: none;
+  }
+  #displayCompetitionpuzzle{
+    display: none;
+  }
+  
+  
+  input[type=date]{
+    font-size: 20px;
+  }
+  input[type=text]{
+    font-size: 20px;
+  }
+  select{
+    font-size: 20px;
+  }
+  
+  label{
+    font-size: 20px;
+    color: black;
+    margin-right: 25px;
+  }
+  #compition_id{
+    width:180px
+  }
+  /* main div in column 2 */
+  #maindiv{
+    height: 100%;
+  }
+  /* row 1 text color */
+  
+  
+  
+  /* row 2 text color */
+
+  /* ---------------------------------------------------- */
+  /* ------------middle coloum  cloumn 3-----------------*/
+  /* ---------------------------------------------------- */
+  
+  #moveimg{
+    padding-top: 90px;
+  }
+  
+  #boxshadow{
+    box-shadow: 6px 6px 40px 10px #5F4B8BFF;
+  }
+  #align{
+    text-align: left;
+   height: 400px;
+   width: 500px;
+   align-items: center;
+  background: linear-gradient(#4DA0B0,#D39D38);
+    border: 2px solid rgb(6, 6, 6);
+  font-size: 24px; 
+  color: rgba(242,242,242);
+  position: relative;
+  }
+  #displaycompetition_inmiddle{
+    margin-left: 120px;
+  }
+ 
+  
+  /*  cursor to pointer */
+  li,h1{
+    cursor: pointer;
+  }
+  
+  /* padding for dancing */
+  #paddingfordancing{
+    margin-top:"150px"
+  }
+  
+  /* color for text in view compitions */
+  .text-right{
+    color: rgba(242,242,242);
+  }
+/* title move style */
+#titlemove{
+  font-size: 22px;
+  font-weight: 800;
+  font-style: italic;
+  color: #D39D38;
+padding-left: 20px;
+  }
+
+
+
+  @media only screen and (max-width:600px){
+    .ts-middle-div {
+      height: 100%;
+    }
+  }
+
+      /* singing 1 popup style */
+
+      #singing1{
+        display: none;
+      }
+    
+      #singing2{
+        display: none;
+      }
+      
+      #singing3{
+        display: none;
+      }
+    
+      #singing4{
+        display: none;
+      }
+      
+      #singing5{
+        display: none;
+      }
+    
+      #singing6{
+        display: none;
+      }
+      
+
+      /* dancing 1 popup style */
+
+      #dancing1{
+        display: none;
+      }
+    
+      #dancing2{
+        display: none;
+      }
+      
+      #dancing3{
+        display: none;
+      }
+    
+      #dancing4{
+        display: none;
+      }
+      
+      #dancing5{
+        display: none;
+      }
+    
+      #dancing6{
+        display: none;
+      }
+      
+          /* painting 1 popup style */
+
+    #painting1{
+      display: none;
+    }
+  
+    #painting2{
+      display: none;
+    }
+    
+    #painting3{
+      display: none;
+    }
+  
+    #painting4{
+      display: none;
+    }
+    
+    #painting5{
+      display: none;
+    }
+  
+    #painting6{
+      display: none;
+    }  
+    /* writing 1 popup style */
+
+    #writing1{
+      display: none;
+    }
+  
+    #writing2{
+      display: none;
+    }
+    
+    #writing3{
+      display: none;
+    }
+  
+    #writing4{
+      display: none;
+    }
+    
+    #writing5{
+      display: none;
+    }
+  
+    #writing6{
+      display: none;
+    }
+    
+    /* comic 1 popup style */
+
+    #comic1{
+      display: none;
+    }
+  
+    #comic2{
+      display: none;
+    }
+    
+    #comic3{
+      display: none;
+    }
+  
+    #comic4{
+      display: none;
+    }
+    
+    #comic5{
+      display: none;
+    }
+  
+    #comic6{
+      display: none;
+    }
+
+        /* puzzle 1 popup style */
+
+        #puzzle1{
+          display: none;
+        }
+      
+        #puzzle2{
+          display: none;
+        }
+        
+        #puzzle3{
+          display: none;
+        }
+      
+        #puzzle4{
+          display: none;
+        }
+        
+        #puzzle5{
+          display: none;
+        }
+      
+        #puzzle6{
+          display: none;
+        }
+
+        /*  back button for pop table rate */
+
+ 
+        #sposition1{
+          position: absolute;
+          top: 10px;
+          right: 25px;
+          cursor: pointer;
+        }
+        #sposition2{
+          position: absolute;
+          top: 10px;
+          right: 25px;
+          cursor: pointer;
+        }
+        #sposition3{
+          position: absolute;
+          top: 10px;
+          right: 25px;
+          cursor: pointer;
+        }
+        #sposition4{
+          position: absolute;
+          top: 10px;
+          right: 25px;
+          cursor: pointer;
+        }
+        #sposition5{
+          position: absolute;
+          top: 10px;
+          right: 25px;
+          cursor: pointer;
+        }
+        #sposition6{
+          position: absolute;
+          top: 10px;
+          right: 25px;
+          cursor: pointer;
+        }
+    /* dance position */
+        #dposition1{
+          position: absolute;
+          top: 230px;
+          right: 700px;
+          cursor: pointer;
+        }
+        #dposition2{
+          position: absolute;
+          top: 230px;
+          right: 700px;
+          cursor: pointer;
+        }
+        #dposition3{
+          position: absolute;
+          top: 230px;
+          right: 700px;
+          cursor: pointer;
+        }
+        #dposition4{
+          position: absolute;
+          top: 230px;
+          right: 700px;
+          cursor: pointer;
+        }
+        #dposition5{
+          position: absolute;
+          top: 230px;
+          right: 700px;
+          cursor: pointer;
+        }
+        #dposition6{
+          position: absolute;
+          top: 230px;
+          right: 700px;
+          cursor: pointer;
+        }
+
+            /* paint position */
+    #pposition1{
+      position: absolute;
+      top: 230px;
+      right: 700px;
+      cursor: pointer;
+    }
+    #pposition2{
+      position: absolute;
+      top: 230px;
+      right: 700px;
+      cursor: pointer;
+    }
+    #pposition3{
+      position: absolute;
+      top: 230px;
+      right: 700px;
+      cursor: pointer;
+    }
+    #pposition4{
+      position: absolute;
+      top: 230px;
+      right: 700px;
+      cursor: pointer;
+    }
+    #pposition5{
+      position: absolute;
+      top: 230px;
+      right: 700px;
+      cursor: pointer;
+    }
+    #pposition6{
+      position: absolute;
+      top: 230px;
+      right: 700px;
+      cursor: pointer;
+    }
+
+  /* write position */
+  #wposition1{
+    position: absolute;
+    top: 230px;
+    right: 700px;
+    cursor: pointer;
+  }
+  #wposition2{
+    position: absolute;
+    top: 230px;
+    right: 700px;
+    cursor: pointer;
+  }
+  #wposition3{
+    position: absolute;
+    top: 230px;
+    right: 700px;
+    cursor: pointer;
+  }
+  #wposition4{
+    position: absolute;
+    top: 230px;
+    right: 700px;
+    cursor: pointer;
+  }
+  #wposition5{
+    position: absolute;
+    top: 230px;
+    right: 700px;
+    cursor: pointer;
+  }
+  #wposition6{
+    position: absolute;
+    top: 230px;
+    right: 700px;
+    cursor: pointer;
+  }
+
+    /* comic position */
+    #cposition1{
+      position: absolute;
+      top: 230px;
+      right: 700px;
+      cursor: pointer;
+    }
+    #cposition2{
+      position: absolute;
+      top: 230px;
+      right: 700px;
+      cursor: pointer;
+    }
+    #cposition3{
+      position: absolute;
+      top: 230px;
+      right: 700px;
+      cursor: pointer;
+    }
+    #cposition4{
+      position: absolute;
+      top: 230px;
+      right: 700px;
+      cursor: pointer;
+    }
+    #cposition5{
+      position: absolute;
+      top: 230px;
+      right: 700px;
+      cursor: pointer;
+    }
+    #cposition6{
+      position: absolute;
+      top: 230px;
+      right: 700px;
+      cursor: pointer;
+    }
+
+  /* puzzle position */
+  #zposition1{
+    position: absolute;
+    top: 230px;
+    right: 700px;
+    cursor: pointer;
+  }
+  #zposition2{
+    position: absolute;
+    top: 230px;
+    right: 700px;
+    cursor: pointer;
+  }
+  #zposition3{
+    position: absolute;
+    top: 230px;
+    right: 700px;
+    cursor: pointer;
+  }
+  #zposition4{
+    position: absolute;
+    top: 230px;
+    right: 700px;
+    cursor: pointer;
+  }
+  #zposition5{
+    position: absolute;
+    top: 230px;
+    right: 700px;
+    cursor: pointer;
+  }
+  #zposition6{
+    position: absolute;
+    top: 230px;
+    right: 700px;
+    cursor: pointer;
+  }
+
+

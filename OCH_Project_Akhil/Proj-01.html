@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> App One </title>
+
+</head> 
+<body>
+
+<div>
+  <h1 style="background-color:rgb(180,180,255); text-align: center;"> 
+     Online Competition Hosting 
+  </h1>
+</div>
+
+<form id="form_login">
+  <br> 
+  <br> 
+  <label> text </label> <input type="text"> 
+  <br> 
+  <br> 
+  <br> 
+  
+  <button type="button" style="background-color:rgb(180,255,180);" 
+        onclick="readFormInput()"> Submit </button>  
+  
+  <button type="button" style="background-color:rgb(255,180,180);"> Fetch </button>
+
+</form>
+
+<script>
+
+function readFormInput()
+{
+    const form_ip = document.forms["form_login"];
+    let text = "";
+
+    for (let i = 0; i < x.length; i++)
+    {
+       text = x.elements[i].value;
+       console.log("------------");
+       console.log(text);
+    }
+}
+
+</script>
+
+</body>
+</html>

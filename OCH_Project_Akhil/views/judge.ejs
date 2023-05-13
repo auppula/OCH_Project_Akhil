@@ -1,0 +1,2047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Online Competition Hosting</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="../css/judge.css">
+</head>
+<body>
+
+<!--  Header -->
+<div class="p-4 ts-header">
+  <h1>Online Competition Hosting</h1>
+</div>
+
+<!---------------------------------------------------->
+<!-------------  Header and Nav bar ------------------>
+<!---------------------------------------------------->
+<nav class="navbar navbar-expand-sm ts-navbar ts-pading-margin pe-4" >
+    <a id="titlemove" >Judge Review</a>
+  <div class="container sm-4 justify-content-center pe-5">
+    
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link ts-navlink ts-border" href="#" onclick="viewcompetition()" id="color1">View Competitions</a>
+      </li>
+     
+      <li class="nav-item">
+        <a class="nav-link ts-navlink ts-border" href="#" onclick="selectentry()" id="color2">Select Entry</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link px-3 ts-navlink ts-border" href="login">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!---------------------------------------------------->
+<!-------------  left middle right columns ----------->
+<!---------------------------------------------------->
+
+<div class="container-fluid text-center">
+<div class="row justify-content-center">
+
+     <!------------- left column ----------->
+     <div class="col-sm-1 ts-pading-margin">
+          <div class="container ts-side-div">
+
+          </div>
+     </div>
+<!------------- middle column 2 ----------->
+
+<div class="col-sm-10 ts-pading-margin  " id="display1">
+    <div class="container ts-middle-div">
+
+      <div class="container-fluid px-5" id="maindiv">
+        <!-- first row -->
+            <div class="row pt-5 px-5">
+              <div class="col-sm-4 "  style="background-color: #4FC978;" onclick="singing()">
+                <div class="container" id="rowcolor">
+<h1 onclick="singing()">Singing</h1>
+<ul id="leftalign">
+<li onclick="singing()">SIN001-Devotional</li>
+<li onclick="singing()">SIN002-Clasical</li>
+<li onclick="singing()">SIN003-Western</li>
+<li onclick="singing()">SIN004-Carols</li>
+<li onclick="singing()">SIN005-Instrumental</li>
+<li onclick="singing()">SIN006-Rymes</li></ul>
+</div>
+                
+              </div>
+              <div class="col-sm-4 "  style="background-color: #C7EA46;" onclick="dancing()">
+                <div class="container" >
+<h1 onclick="dancing()">Dancing</h1>
+
+<ul id="leftalign">
+  <li onclick="dancing()">DAN001-Ballet</li>
+  <li onclick="dancing()">DAN002-HipHop</li>
+  <li onclick="dancing()">DAN003-Jazz</li>
+  <li onclick="dancing()">DAN004-Clasical</li>
+  <li onclick="dancing()">DAN005-Folk</li>
+  <li onclick="dancing()">DAN004-Modern</li>
+</ul>
+</div>
+              </div>
+              <div class="col-sm-4 "  style="background-color: #4FC978;" onclick="painting()">
+                <div class="container" id="rowcolor">
+<h1 onclick="painting()">Painting</h1>
+<ul id="leftalign">
+  <li onclick="painting()">PAI001-Realism</li>
+  <li onclick="painting()">PAI002-Abstract</li>
+  <li onclick="painting()">PAI003-Modren</li>
+  <li onclick="painting()">PAI004-Oil</li>
+  <li onclick="painting()">PAI005-Sketch</li>
+  <li onclick="painting()">PAI006-Spray </li></ul>
+</div>
+              </div>
+            </div>
+            <!-- second row -->
+             <div class="row   px-5">
+              <div class="col-sm-4 "  style="background-color: #C7EA46;" onclick="storywriting()">
+                <div class="container">
+<h1 onclick="storywriting()">Story Writing</h1>
+<ul id="leftalign">
+  <li onclick="storywriting()">STO001-Devotion</li>
+  <li onclick="storywriting()">STO002-History</li>
+  <li onclick="storywriting()">STO003-Science</li>
+  <li onclick="storywriting()">STO004-Moral</li>
+  <li onclick="storywriting()">STO005-Comedy</li>
+  <li onclick="storywriting()">STO006-Travel</li>
+  </ul>
+</div>
+              </div>
+              <div class="col-sm-4 "  style="background-color: #4FC978;" onclick="comic()">
+                <div class="container" id="rowcolor">
+<h1 onclick="comic()">Comic</h1>
+
+<ul id="leftalign">
+  <li onclick="comic()">COM001-Humor</li>
+  <li onclick="comic()">COM002-Science</li>
+  <li onclick="comic()">COM003-History</li>
+  <li onclick="comic()">COM004-Travel</li>
+  <li onclick="comic()">COM005-Kids</li>
+  <li onclick="comic()">COM006-Anime</li>
+  </ul>
+                </div>
+              </div>
+              <div class="col-sm-4 "  style="background-color: #C7EA46;" onclick="puzzles()">
+                <div class="container">
+        <h1>Puzzles</h1>
+        <ul id="leftalign">
+          <li onclick="puzzles()">PUZ001-Crossword</li>
+          <li onclick="puzzles()">PUZ002-Maths  </li>
+          <li onclick="puzzles()">PUZ003-Jigsaw</li>
+          <li onclick="puzzles()">PUZ004-Analytical</li>
+          <li onclick="puzzles()">PUZ005-Sudoku </li>
+          <li onclick="puzzles()">PUZ006-Logic</li>
+                  </ul>
+</div>
+              </div>
+            </div>
+      </div>            
+
+    </div>
+</div>
+
+
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------competition details for singing--------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<div class="col-sm-10 col-xl-10 ts-pading-margin " id="displayCompetition">
+  <div class="container ts-middle-div">
+  <div class="table-responsive">
+    <table class="table table-dark table-info table-striped text-start mt-4">
+      <thead>
+        <tr>
+          <th scope="col">S.no</th>
+          <th scope="col">Competition-ID</th>
+          <th scope="col">Entry-ID</th>
+          <th scope="col">Username</th>
+          <th scope="col">EMAIL</th>
+          <th scope="col">Fill-Ratting</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>SIN001-Devotional</td>
+          <td>180330243</td>
+          <td>A. Pavan</td>
+          <td>anamdas.pavan@gmail.com</td>
+          <td><button class="btn btn-success"  onclick="sing1()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>SIN002-Clasical</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success"  onclick="sing2()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>SIN003-Western</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success" onclick="sing3()">Rate</button></td>
+        </tr>
+        <tr>
+        <th scope="row">4</th>
+          <td>SIN004-Carols</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success" onclick="sing4()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>SIN005-Instrumental</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success" onclick="sing5()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>SIN006-Rymes</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>anamdas.pavan@gmail.com</td>
+          <td><button class="btn btn-success" onclick="sing6()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>SIN001-Devotional</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">8</th>
+          <td>SIN002-Clasical</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success">Rate</button></td>
+        </tr>
+       
+        
+      </tbody>
+    </table>
+    </div>
+  </div>
+  </div>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------popup style for singing--------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<div class="col-sm-10 ts-pading-margin " id="singing1">
+  <div class="container ts-middle-div">
+
+        <!-- coloum 1 -->
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-sm-5  mt-5">
+
+        
+                        <div class="container align-items-center"id="align">
+                                   <p class="text-right">CompID : SIN001-Devotional</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Audience Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> <br></p> 
+                                    <p class="mt-5">
+                                    <audio controls style="width: 300px;" class="mt-4 ms-3">
+                                      <source src="img/Made In India - Guru Randhawa 320Kbps.mp3" type="audio/mp3" style="width: 60px;">
+                                    </audio></p>
+                                    <div id="sposition1" onclick="close1()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+</div>
+      </div>
+</div>
+</div>
+</div>
+</div>
+<!-- ========================== -->
+<!-- singing 2 -->
+<!-- ========================== -->
+<div class="col-sm-10 ts-pading-margin " id="singing2">
+  <div class="container ts-middle-div">
+
+        <!-- coloum 1 -->
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-5  mt-5">
+    
+                        <div class="container align-items-center"id="align">
+                          <p>CompID : SIN002-Clasical</p>
+                          <p>Username :</p>
+                          <p> Phone : </p>
+                         <p>  Email :  </p>
+                         <p>Audience Rating :<span>              
+                          <input type="range" id="vol" name="vol" min="1" max="10" >
+                          </span> <br></p> 
+                        <p class="mt-5">
+                        <audio controls style="width: 300px;" class="mt-4 ms-3">
+                          <source src="img/Made In India - Guru Randhawa 320Kbps.mp3" type="audio/mp3" style="width: 60px;">
+                        </audio></p>
+                        <div id="sposition2" onclick="close1()">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                            <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    </div>       
+        </div>
+</div>
+</div>
+
+<!-- ========================== -->
+<!-- singing 3 -->
+<!-- ========================== -->
+<div class="col-sm-10 ts-pading-margin " id="singing3">
+  <div class="container ts-middle-div">
+
+        <!-- coloum 1 -->
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-5  mt-5">
+                        <div class="container align-items-center"id="align">
+                          <p>CompID : SIN003-Western</p>
+                  <p>Username :</p>
+                  <p> Phone : </p>
+                 <p>  Email :  </p>
+                 <p>Audience Rating :<span>              
+                  <input type="range" id="vol" name="vol" min="1" max="10" >
+                  </span> <br></p> 
+                <p class="mt-5">
+                <audio controls style="width: 300px;" class="mt-4 ms-3">
+                  <source src="img/Made In India - Guru Randhawa 320Kbps.mp3" type="audio/mp3" style="width: 60px;">
+                </audio></p>
+                <div id="sposition3" onclick="close1()">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                    <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>   
+        </div>
+</div>
+</div>
+</div>
+
+<!-- ========================== -->
+<!-- singing 4 -->
+<!-- ========================== -->
+<div class="col-sm-10 ts-pading-margin " id="singing4">
+  <div class="container ts-middle-div">
+
+        <!-- coloum 1 -->
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-5  mt-5">
+                        <div class="container align-items-center" id="align">
+                          <p class="text-right">CompID : SIN004-Carols</p>
+                          <p class="text-right">Username :</p>
+                          <p class="text-right"> Phone : </p>
+                         <p class="text-right">  Email :  </p>
+                          <p>Audience Rating :<span>              
+                             <input type="range" id="vol" name="vol" min="1" max="10" >
+                             </span> <br></p> 
+                           <p class="mt-5">
+                           <audio controls style="width: 300px;" class="mt-4 ms-3">
+                             <source src="img/Made In India - Guru Randhawa 320Kbps.mp3" type="audio/mp3" style="width: 60px;">
+                           </audio></p>
+                           <div id="sposition4" onclick="close1()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                              <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                            </svg>
+                          </div>
+                          
+        </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ========================== -->
+<!-- singing 5 -->
+<!-- ========================== -->
+<div class="col-sm-10 ts-pading-margin " id="singing5">
+  <div class="container ts-middle-div">
+
+        <!-- coloum 1 -->
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-5  mt-5">
+                        <div class="container align-items-center"id="align">
+                          <p>CompID : SIN005-Instrumentl</p>
+                          <p>Username :</p>
+                          <p> Phone : </p>
+                         <p>  Email :  </p>
+                         <p>Audience Rating :<span>              
+                          <input type="range" id="vol" name="vol" min="1" max="10" >
+                          </span> <br></p> 
+                        <p class="mt-5">
+                        <audio controls style="width: 300px;" class="mt-4 ms-3">
+                          <source src="img/Made In India - Guru Randhawa 320Kbps.mp3" type="audio/mp3" style="width: 60px;">
+                        </audio></p>
+                        <div id="sposition5"onclick="close1()">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                            <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                          </svg>
+                        </div>
+                          
+        </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- ========================== -->
+<!-- singing 6 -->
+<!-- ========================== -->
+<div class="col-sm-10 ts-pading-margin " id="singing6">
+  <div class="container ts-middle-div">
+
+        <!-- coloum 1 -->
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-5  mt-5">
+
+                        <div class="container align-items-center"id="align">
+                          <p>CompID : SIN006-Rymes</p>
+                          <p>Username :</p>
+                          <p> Phone : </p>
+                         <p>  Email :  </p>
+                         <p>Audience Rating :<span>              
+                          <input type="range" id="vol" name="vol" min="1" max="10" >
+                          </span> <br></p> 
+                        <p class="mt-5">
+                        <audio controls style="width: 300px;" class="mt-4 ms-3">
+                          <source src="img/Made In India - Guru Randhawa 320Kbps.mp3" type="audio/mp3" style="width: 60px;">
+                        </audio></p>
+                        <div id="sposition6" onclick="close1()">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                            <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                          </svg>
+                        </div>
+                          </div>
+</div>
+        </div>
+</div>
+</div>
+</div>
+
+
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------competition details Dancing------------------------------------------------------ -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<div class="col-sm-10 col-xl-10 ts-pading-margin " id="displayCompetitiondancing">
+  <div class="container ts-middle-div">
+
+  <div class="table-responsive">
+    <table class="table table-dark table-info table-striped text-start mt-4">
+      <thead>
+        <tr>
+          <th scope="col">S.no</th>
+          <th scope="col">Competition-ID</th>
+          <th scope="col">Entry-ID</th>
+          <th scope="col">Username</th>
+          <th scope="col">EMAIL</th>
+          <th scope="col">Fill-Ratting</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>DAN001-Ballet</td>
+          <td>180330243</td>
+          <td>A. Pavan</td>
+          <td>anamdas.pavan@gmail.com</td>
+          <td><button class="btn btn-success"  onclick="dance1()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>DAN002-HipHop</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success"  onclick="dance2()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>DAN003-Jazz</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success" onclick="dance3()">Rate</button></td>
+        </tr>
+        <tr>
+        <th scope="row">4</th>
+          <td>DAN004-Clasical</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success" onclick="dance4()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>DAN005-Folk</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success" onclick="dance5()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>DAN006-Modern</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>anamdas.pavan@gmail.com</td>
+          <td><button class="btn btn-success" onclick="dance6()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>DAN001-Ballet</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">8</th>
+          <td>DAN002-HipHop</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success">Rate</button></td>
+        </tr>
+       
+        
+      </tbody>
+    </table>
+    </div>
+  </div>
+  </div>
+
+
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------------------pop  Dancing----------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- ================================== -->
+<!-- dancing  1-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="dancing1">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">DAN001-Ballet</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="dposition1" onclick="close2()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+               <video width="400" height="400" controls id="boxshadow"><source src="img/dance 2.webm" type="video/webm"></video>
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================================== -->
+<!-- dancing  2-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="dancing2">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">DAN002-HipHopt</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="dposition2" onclick="close2()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+               <video width="400" height="400" controls id="boxshadow"><source src="img/dance 2.webm" type="video/webm"></video>
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================================== -->
+<!-- dancing  3-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="dancing3">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">DAN003-Jazz</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="dposition3" onclick="close2()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+               <video width="400" height="400" controls id="boxshadow"><source src="img/dance 2.webm" type="video/webm"></video>
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- ================================== -->
+<!-- dancing  4-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="dancing4">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">DAN004-Clasical</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="dposition4" onclick="close2()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+               <video width="400" height="400" controls id="boxshadow"><source src="img/dance 2.webm" type="video/webm"></video>
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- ================================== -->
+<!-- dancing  5-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="dancing5">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">DAN005-Folk</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="dposition5" onclick="close2()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+               <video width="400" height="400" controls id="boxshadow"><source src="img/dance 2.webm" type="video/webm"></video>
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================================== -->
+<!-- dancing  6-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="dancing6">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">DAN006-Modern</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="dposition6" onclick="close2()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+               <video width="400" height="400" controls id="boxshadow"><source src="img/dance 2.webm" type="video/webm"></video>
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------competition details Painting------------------------------------------------------ -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<div class="col-sm-10 ts-pading-margin " id="displayCompetitionpainting">
+  <div class="container ts-middle-div">
+
+  <div class="table-responsive">
+    <table class="table table-dark table-info table-striped text-start mt-4">
+      <thead>
+        <tr>
+          <th scope="col">S.no</th>
+          <th scope="col">Competition-ID</th>
+          <th scope="col">Entry-ID</th>
+          <th scope="col">Username</th>
+          <th scope="col">EMAIL</th>
+          <th scope="col">Fill-Ratting</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>PAI001-Realism</td>
+          <td>180330243</td>
+          <td>A. Pavan</td>
+          <td>anamdas.pavan@gmail.com</td>
+          <td><button class="btn btn-success"  onclick="paint1()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>PAI002-Abstract</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success"  onclick="paint2()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>PAI003-Modren</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success" onclick="paint3()">Rate</button></td>
+        </tr>
+        <tr>
+        <th scope="row">4</th>
+          <td>PAI004-Oil</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success" onclick="paint4()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>PAI005-Sketch</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success" onclick="paint5()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>PAI006-Spray </td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>anamdas.pavan@gmail.com</td>
+          <td><button class="btn btn-success" onclick="paint6()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>PAI001-Realism</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">8</th>
+          <td>PAI002-Abstract</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success">Rate</button></td>
+        </tr>
+       
+        
+      </tbody>
+    </table>
+    </div>
+  </div>
+  </div>
+
+  <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------------------pop painting----------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- ================================== -->
+<!-- painting  1-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="painting1">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">PAI001-Realism</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="pposition1" onclick="close3()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+          <img src="img/painting-1.jpg" width="400px" height="400px" alt="" id="boxshadow">
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================================== -->
+<!-- painting  2-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="painting2">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">PAI002-Abstract</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="pposition2" onclick="close3()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+          <img src="img/painting-1.jpg" width="400px" height="400px" alt="" id="boxshadow">
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================================== -->
+<!-- painting  3-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="painting3">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">PAI003-Modren</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="pposition3" onclick="close3()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+          <img src="img/painting-1.jpg" width="400px" height="400px" alt="" id="boxshadow">
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- ================================== -->
+<!-- painting  4-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="painting4">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">PAI004-Oil</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="pposition4" onclick="close3()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+          <img src="img/painting-1.jpg" width="400px" height="400px" alt="" id="boxshadow">
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- ================================== -->
+<!-- painting  5-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="painting5">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">PAI005-Sketch</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="pposition5" onclick="close3()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+          <img src="img/painting-1.jpg" width="400px" height="400px" alt="" id="boxshadow">
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================================== -->
+<!-- painting 6-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="painting6">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">PAI006-Spray </p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="pposition6" onclick="close3()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+          <img src="img/painting-1.jpg" width="400px" height="400px" alt="" id="boxshadow">
+        </div>
+</div>
+</div>
+</div>
+</div>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------competition details writing------------------------------------------------------ -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<div class="col-sm-10 ts-pading-margin " id="displayCompetitionwriting">
+  <div class="container ts-middle-div">
+
+  <div class="table-responsive">
+    <table class="table table-dark table-info table-striped text-start mt-4">
+      <thead>
+        <tr>
+          <th scope="col">S.no</th>
+          <th scope="col">Competition-ID</th>
+          <th scope="col">Entry-ID</th>
+          <th scope="col">Username</th>
+          <th scope="col">EMAIL</th>
+          <th scope="col">Fill-Ratting</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>STO001-Devotion</td>
+          <td>180330243</td>
+          <td>A. Pavan</td>
+          <td>anamdas.pavan@gmail.com</td>
+          <td><button class="btn btn-success"  onclick="write1()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>STO002-History</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success"  onclick="write2()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>STO003-Science</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success" onclick="write3()">Rate</button></td>
+        </tr>
+        <tr>
+        <th scope="row">4</th>
+          <td>STO004-Moral</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success" onclick="write4()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>STO005-Comedy</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success" onclick="write5()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>STO006-Travel </td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>anamdas.pavan@gmail.com</td>
+          <td><button class="btn btn-success" onclick="write6()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>STO001-Devotion</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">8</th>
+          <td>STO002-History</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success">Rate</button></td>
+        </tr>
+       
+        
+      </tbody>
+    </table>
+    </div>
+  </div>
+  </div>
+
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------------------pop storywriting----------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- ================================== -->
+<!-- writing  1-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="writing1">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">STO001-Devotion</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="wposition1" onclick="close4()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+          <img src="img/painting-1.jpg" width="400px" height="400px" alt="" id="boxshadow">
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================================== -->
+<!-- writing 2-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="writing2">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">STO002-History</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="wposition2" onclick="close4()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+          <img src="img/story-01.jpg" width="400px" height="400px" alt="" id="boxshadow">
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================================== -->
+<!--writitng  3-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="writing3">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">STO003-Science</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="wposition3" onclick="close4()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+          <img src="img/story-01.jpg" width="400px" height="400px" alt="" id="boxshadow">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================================== -->
+<!-- writing  4-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="writing4">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">STO004-Moral</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="wposition4" onclick="close4()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+          <img src="img/story-01.jpg" width="400px" height="400px" alt="" id="boxshadow">
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- ================================== -->
+<!-- writing  5-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="writing5">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">STO005-Comedy</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="wposition5" onclick="close4()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+          <img src="img/story-01.jpg" width="400px" height="400px" alt="" id="boxshadow">
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================================== -->
+<!-- writing 6-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="writing6">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">STO006-Travel</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="wposition6" onclick="close4()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+          <img src="img/story-01.jpg" width="400px" height="400px" alt="" id="boxshadow">
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------competition details Comic------------------------------------------------------ -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<div class="col-sm-10 col-xl-10 ts-pading-margin " id="displayCompetitioncommedy">
+  <div class="container ts-middle-div">
+
+  <div class="table-responsive">
+    <table class="table table-dark table-info table-striped text-start mt-4">
+      <thead>
+        <tr>
+          <th scope="col">S.no</th>
+          <th scope="col">Competition-ID</th>
+          <th scope="col">Entry-ID</th>
+          <th scope="col">Username</th>
+          <th scope="col">EMAIL</th>
+          <th scope="col">Fill-Ratting</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>COM001-Humor</td>
+          <td>180330243</td>
+          <td>A. Pavan</td>
+          <td>anamdas.pavan@gmail.com</td>
+          <td><button class="btn btn-success"  onclick="com1()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>COM002-Science</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success"  onclick="com2()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>COM003-History</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success" onclick="com3()">Rate</button></td>
+        </tr>
+        <tr>
+        <th scope="row">4</th>
+          <td>COM004-Travel</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success" onclick="com4()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>COM005-Kids</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success" onclick="com5()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>COM006-Anime</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>anamdas.pavan@gmail.com</td>
+          <td><button class="btn btn-success" onclick="com6()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>COM001-Humor</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">8</th>
+          <td>COM002-Science</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success">Rate</button></td>
+        </tr>
+       
+        
+      </tbody>
+    </table>
+    </div>
+  </div>
+  </div>
+
+  <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------------------pop comic----------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- ================================== -->
+<!-- comic 1-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="comic1">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">COM001-Humor</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="cposition1" onclick="close5()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+          <img src="img/comic-1.jpg" width="400px" height="400px" alt="" id="boxshadow">
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================================== -->
+<!-- comic2-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="comic2">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">COM002-Science</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="cposition2" onclick="close5()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+          <img src="img/comic-1.jpg" width="400px" height="400px" alt="" id="boxshadow">
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================================== -->
+<!--comic  3-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="comic3">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">COM003-History</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="cposition3" onclick="close5()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+          <img src="img/comic-1.jpg" width="400px" height="400px" alt="" id="boxshadow">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================================== -->
+<!-- comic  4-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="comic4">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">COM004-Travel</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="cposition4" onclick="close5()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+          <img src="img/comic-1.jpg" width="400px" height="400px" alt="" id="boxshadow">
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- ================================== -->
+<!-- comic  5-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="comic5">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">COM005-Kids</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="cposition5" onclick="close5()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+          <img src="img/comic-1.jpg" width="400px" height="400px" alt="" id="boxshadow">
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================================== -->
+<!-- comic 6-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="comic6">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">COM006-Anime</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="cposition6" onclick="close5()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+          <img src="img/comic-1.jpg" width="400px" height="400px" alt="" id="boxshadow">
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------competition details PUZZLE---------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<div class="col-sm-10 col-xl-10 ts-pading-margin " id="displayCompetitionpuzzle">
+  <div class="container ts-middle-div">
+
+  <div class="table-responsive">
+    <table class="table table-dark table-info table-striped text-start mt-4">
+      <thead>
+        <tr>
+          <th scope="col">S.no</th>
+          <th scope="col">Competition-ID</th>
+          <th scope="col">Entry-ID</th>
+          <th scope="col">Username</th>
+          <th scope="col">EMAIL</th>
+          <th scope="col">Fill-Ratting</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>PUZ001-Crossword</td>
+          <td>180330243</td>
+          <td>A. Pavan</td>
+          <td>anamdas.pavan@gmail.com</td>
+          <td><button class="btn btn-success"  onclick="puzz1()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>PUZ002-Maths </td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success"  onclick="puzz2()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>PUZ003-Jigsaw</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success" onclick="puzz3()">Rate</button></td>
+        </tr>
+        <tr>
+        <th scope="row">4</th>
+          <td>PUZ004-Analytical</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success" onclick="puzz4()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>PUZ005-Sudoku </td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success" onclick="puzz5()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>PUZ006-Logic</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>anamdas.pavan@gmail.com</td>
+          <td><button class="btn btn-success" onclick="puzz6()">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>PUZ001-Crossword</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success">Rate</button></td>
+        </tr>
+        <tr>
+          <th scope="row">8</th>
+          <td>PUZ003-Jigsaw</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td>empty</td>
+          <td><button class="btn btn-success">Rate</button></td>
+        </tr>
+       
+        
+      </tbody>
+    </table>
+    </div>
+  </div>
+  </div>
+
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------------------pop puzzle----------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- ================================== -->
+<!-- puzzle 1-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="puzzle1">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">PUZ001-Crossword</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="zposition1" onclick="close6()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+          <img src="img/puzle-01.png" width="400px" height="400px" alt="" id="boxshadow">
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================================== -->
+<!-- puzzle 2-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="puzzle2">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">PUZ002-Maths </p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="zposition2" onclick="close6()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+          <img src="img/puzle-01.png" width="400px" height="400px" alt="" id="boxshadow">
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================================== -->
+<!--puzzle  3-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="puzzle3">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">PUZ003-Jigsaw</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="zposition3" onclick="close6()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+          <img src="img/puzle-01.png" width="400px" height="400px" alt="" id="boxshadow">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================================== -->
+<!-- puzzle  4-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="puzzle4">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">PUZ004-Analytical</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="zposition4" onclick="close6()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+          <img src="img/puzle-01.png" width="400px" height="400px" alt="" id="boxshadow">
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- ================================== -->
+<!-- puzzle 5-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="puzzle5">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">PUZ005-Sudoku</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="zposition5" onclick="close6()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+          <img src="img/puzle-01.png" width="400px" height="400px" alt="" id="boxshadow">
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================================== -->
+<!-- puzzle6-->
+<!-- =================================== -->
+<div class="col-sm-10 ts-pading-margin " id="puzzle6">
+  <div class="container ts-middle-div">
+
+
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col-lg-5  mt-5" >
+
+        
+                        <div class="container align-items-center" id="align">
+                                   <p class="text-right">PUZ006-Logic</p>
+                                   <p class="text-right">Username :</p>
+                                   <p class="text-right"> Phone : </p>
+                                  <p class="text-right">  Email :  </p>
+                                   <p>Participants Rating :<span>              
+                                      <input type="range" id="vol" name="vol" min="1" max="10" >
+                                      </span> </p> </div>
+                                      <div id="zposition6" onclick="close6()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16" style="color: rgb(243, 28, 28);">
+                                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                      </svg>
+                                    </div>
+                             </div>
+        <div class="col-sm-3 mt-5" id="dancepositionalign">
+          <img src="img/puzle-01.png" width="400px" height="400px" alt="" id="boxshadow">
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- display 2 for second coloum -->
+<div class="col-sm-10 ts-pading-margin " id="display2">
+  <div class="container ts-middle-div">
+<div>pending</div>
+    </div>
+</div>
+
+  <!------------- right column ----------->
+   <div class="col-sm-1 ts-pading-margin ">
+        <div class="container ts-side-div">
+    
+        </div>
+   </div>
+
+</div>   <!-- end of row -->
+</div>   <!-- end of container -->
+<!---------------------------------------------------->
+<!---------------------- footer ---------------------->
+<!---------------------------------------------------->
+
+<footer class="container-fluid text-center ts-footer">
+    <p>Copyright 2023</p>
+  </footer>
+  
+  <!---------------------------------------------------->
+  <!---------------------- Java Script ---------------------->
+  <!----------------------------------------------------> 
+
+<script src="js/judge.js"></script>
+</body>
+
+</html>

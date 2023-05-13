@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Online Competition Hosting</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="css/loginpage.css">
+</head>
+<body>
+
+<!--  Header -->
+<div class="p-4 ts-header">
+  <h1>Online Competition Hosting</h1>
+</div>
+
+
+<!---------------------------------------------------->
+<!-------------  left middle right columns ----------->
+<!---------------------------------------------------->
+
+<div class="container-fluid text-center">
+<div class="row justify-content-center">
+
+     <!------------- left column ----------->
+     <div class="col-sm-1 ts-pading-margin">
+          <div class="container ts-side-div">
+   
+          </div>
+     </div>
+
+     <!------------- middle column 1 ----------->
+     <div class="col-sm-10 ts-pading-margin " id="display1">
+          <div class="container ts-middle-div">
+      
+            <div class="container">
+
+                   <form id="containermove" >
+                    <div class="container" id="main" >
+                   <label class="text-dark mt-5" id="aliginadjust1"  >Login ID</label>
+                   <input type="text" class="mx-3">  </input> 
+                    <br> 
+                    <br>
+                    <label class="text-dark" > Password</label>
+                   <input type="password" class="mx-3" id="aliginadjust2">
+                   <br>  
+                   <br>
+                   <label class="text-dark">UserType</label>
+                   <select id="aliginadjust3" name="myDestination">   
+                    <option >--select--</option>
+                     <option value="management" id="Management" name="fname" >Management</option>
+                   <option value="participants">Participants</option>  
+                   <option value="audience">Audience</option>  
+                   <option value="judge">Judge</option>
+                     
+                     
+                   </select>  <br>  <br>
+
+                   <button type="submit"  onclick="nav=this.form.myDestination ; 
+            window.open(nav.options[nav.selectedIndex].value)"> 
+            Login</button>
+                       </div>                                               
+                </form>
+            </div>            
+
+          </div>
+     </div>
+
+
+    <!------------- right column ----------->
+     <div class="col-sm-1 ts-pading-margin ">
+          <div class="container ts-side-div">
+    
+          </div>
+     </div>
+
+</div>   <!-- end of row -->
+</div>   <!-- end of container -->
+
+
+<!---------------------------------------------------->
+<!---------------------- footer ---------------------->
+<!---------------------------------------------------->
+
+<footer class="container-fluid text-center ts-footer">
+  <p>Copyright 2023</p>
+</footer>
+
+<!---------------------------------------------------->
+<!---------------------- Java Script ---------------------->
+<!---------------------------------------------------->
+<script>
+
+</script>
+</body>
+</html>
